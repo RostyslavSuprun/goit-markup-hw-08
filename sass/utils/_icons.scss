@@ -1,0 +1,41 @@
+.ico {
+  max-width: 26px;
+  padding-right: 10px;
+  max-height: 80px;
+  fill: #757575;
+}
+svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail-to:hover svg,
+.phone:hover svg,
+.mail-to:focus svg,
+.phone:focus svg {
+  fill: #188ce8;
+}
+
+.feature-list__ico {
+  width: 70px;
+  height: 70px;
+}
+
+.svg-box {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-ico {
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
