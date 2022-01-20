@@ -20,7 +20,6 @@ svg {
 }
 
 .svg-box {
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
@@ -28,6 +27,10 @@ svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 480px) {
+    width: 270px;
+  }
 }
 
 .company-ico {
