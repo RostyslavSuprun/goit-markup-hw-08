@@ -59,7 +59,13 @@
   margin-bottom: 20px;
 }
 .join-us__section {
-  padding-top: 12px;
+  padding: 60px 0;
+  @media screen and (min-width: 768px) {
+    padding: 65px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 75px 0;
+  }
   // margin-left: 70px;
 }
 .join-us__box {
@@ -129,6 +135,7 @@
     padding: 15px 16px;
     outline: none;
     width: 100%;
+    margin-bottom: 20px;
     @media screen and (min-width: 1200px) {
       margin-right: 12px;
     }

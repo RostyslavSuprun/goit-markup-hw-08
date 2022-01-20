@@ -6,6 +6,10 @@
   justify-content: space-between;
   align-items: center;
 
+  @media screen and (max-width: 479px) {
+    height: 60px;
+  }
+
   & .container {
     max-height: 80px;
     @media screen and (max-width: 479px) {
