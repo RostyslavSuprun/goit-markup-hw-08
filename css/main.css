@@ -1144,6 +1144,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1162,6 +1163,11 @@ body {
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.backdrop__mobile {
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .modal {
