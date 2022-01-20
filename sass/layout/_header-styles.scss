@@ -28,8 +28,12 @@
   line-height: 1.19em;
   text-decoration: none;
   color: #000000;
-  margin-right: 93px;
-
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
   &__part {
     color: var(--accent-color);
   }
