@@ -9,6 +9,10 @@
 
   @media screen and (max-width: 479px) {
     height: 60px;
+    position: sticky;
+    background-color: #fff;
+    border-style: none;
+    top: 0;
   }
 
   & .container {
