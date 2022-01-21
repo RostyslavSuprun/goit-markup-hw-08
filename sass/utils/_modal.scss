@@ -21,10 +21,6 @@
     transition: transform 250ms linear;
   }
 }
-.backdrop__mobile {
-  overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
 .modal {
   position: absolute;

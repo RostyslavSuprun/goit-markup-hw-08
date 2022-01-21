@@ -20,28 +20,32 @@
        <div class="container">
          <nav class="nav">
             <a class="logo" href="./index.html"><span class="logo__part">Web</span>Studio</a>
-            <button data-mobile-menu-open type="button" class="burger__button">
-            <svg class="burger" xmlns="http://www.w3.org/2000/svg">
-                <use href="./images/icons.svg#icon-burger"></use>
-            </svg></button>
-            <ul class="nav-list">
-             <li class="nav-list__item"><a class="nav-list__link current" href="./index.html" style="color: #2196f3 ;">Студия</a></li>
-             <li class="nav-list__item"><a class="nav-list__link" href="./portfolio.html">Портфолио</a></li>
-             <li class="nav-list__item"><a class="nav-list__link" href="contacts">Контакты</a></li>
-            </ul>
-            
-         </nav>
-            <ul class="info-list">
-             <li class="info-list__item"><a class="mail-to" href="mailto:info@devstudio.com">
-                 <svg class="ico" xmlns="http://www.w3.org/2000/svg">
-                     <use href="./images/icons.svg#icon-envelope"></use>
-                 </svg>info@devstudio.com</a> </li>
-             <li class="info__item"><a class="phone" href="tel:+380961111111">
-                <svg class="ico" xmlns="http://www.w3.org/2000/svg">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>+38 096 111 11 11</a> </li>
-            </ul>
-           
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                    <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a class="nav-list__link current" href="./index.html" style="color: #2196f3 ;">Студия</a>
+                    </li>
+                    <li class="nav-list__item"><a class="nav-list__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link" href="contacts">Контакты</a></li>
+                </ul>
+                
+                <ul class="info-list">
+                    <li class="info-list__item"><a class="mail-to" href="mailto:info@devstudio.com">
+                            <svg class="ico" xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a> </li>
+                    <li class="info__item"><a class="phone" href="tel:+380961111111">
+                            <svg class="ico" xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a> </li>
+                </ul>
+            </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -301,15 +305,6 @@
                 </div>
                 <button type="submit" class="submit">Отправить</button>
             </form>
-            </div>
-        </div>
-        <div class="backdrop__mobile is-hidden" data-mobile-open>
-            <div class="modal__mobile">
-                <form class="form__mobile">
-                    <button type="button" class="close-modal" data-mobile-close><svg class="cross">
-                            <use href="./images/icons.svg#icon-cross"></use>
-                        </svg></button>
-                </form>
             </div>
         </div>
     </main>
