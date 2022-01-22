@@ -1,11 +1,40 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container,
+  .container__clients,
+  .feature-section__container,
+  .workers-list {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container,
+  .container__clients,
+  .feature-section__container,
+  .workers-list {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container,
+  .container__clients,
+  .feature-section__container,
+  .workers-list {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 /* === banner section styles === */
 body {
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 .banner {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   background: var(--background-color);
   margin-right: auto;
   margin-left: auto;
@@ -68,11 +97,18 @@ body {
   }
 
   &__container {
-    max-width: 1200px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
   }
 }
 
@@ -87,8 +123,10 @@ body {
   color: var(--title-text-color);
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     flex-basis: calc((100% - 90px) / 4);
@@ -97,10 +135,12 @@ body {
   &__item {
     margin-top: 0px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 354px;
 
-    @media screen and (min-width: 480px) {
-      padding-right: 30px;
-      margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
     }
   }
   &__item:last-child {
@@ -125,6 +165,13 @@ body {
     margin-bottom: 0px;
   }
 }
+
+// &:not(:nth-child(2n)) {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     margin-right: 30px;
+//     // margin-bottom: 10px;
+//   }
+// }
 
 /* ==== чим ми займаємось ==== */
 .section__name {
