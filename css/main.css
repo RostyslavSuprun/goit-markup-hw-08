@@ -377,6 +377,20 @@ a.phone {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .container,
+  .footer__container,
+  .container__clients,
+  .feature-section__container,
+  .workers-list,
+  .container__filters,
+  .project-list,
+  .container__examples {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container,
   .footer__container,
@@ -455,6 +469,7 @@ body {
 @media screen and (max-width: 479px) {
   .banner {
     margin-bottom: 60px;
+    max-width: 480px;
   }
 }
 
