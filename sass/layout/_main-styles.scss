@@ -6,6 +6,7 @@
   .workers-list,
   .container__filters,
   .project-list,
+  .banner,
   .container__examples {
     max-width: 480px;
     margin: 0 auto;
@@ -19,6 +20,7 @@
   .workers-list,
   .container__filters,
   .project-list,
+  .banner,
   .container__examples {
     max-width: 480px;
     margin: 0 auto;
@@ -32,6 +34,7 @@
   .workers-list,
   .container__filters,
   .project-list,
+  .banner,
   .container__examples {
     max-width: 768px;
     margin: 0 auto;
@@ -45,6 +48,7 @@
   .workers-list,
   .container__filters,
   .project-list,
+  .banner,
   .container__examples {
     max-width: 1200px;
     margin: 0 auto;
@@ -68,9 +72,20 @@ body {
   background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   align-items: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4)),
+      url("../images/hero@x2.jpg");
+  }
 
   @media screen and (max-width: 479px) {
     margin-bottom: 60px;
