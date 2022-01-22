@@ -93,6 +93,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -1316,6 +1317,7 @@ body {
 
 .filter-list {
   margin-bottom: 40px;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1400,6 +1402,7 @@ body {
           box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

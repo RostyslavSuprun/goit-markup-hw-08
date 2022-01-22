@@ -11,6 +11,7 @@ body {
 }
 .filter-list {
   margin-bottom: 40px;
+  padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
@@ -77,6 +78,7 @@ body {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       max-width: 354px;
       height: 440px;
