@@ -25,6 +25,9 @@
 .menu-button.is-open .icon-close {
   display: block;
 }
+.menu-button.is-open {
+  z-index: 10;
+}
 
 .menu-button.is-open .icon-burger {
   display: none;
@@ -38,7 +41,7 @@
 
   display: none;
   position: absolute;
-  top: 100%;
+  top: 31%;
   left: 0;
 
   &.is-open {
@@ -47,13 +50,12 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100vh;
-    height: 95vh;
-    padding-top: 0px;
+    height: 100vh;
+    padding-top: 28px;
     padding-bottom: 50px;
     .info-list {
       margin-left: 0;
     }
-    top: 50px;
   }
 
   @media screen and (min-width: 768px) {
