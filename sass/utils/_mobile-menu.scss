@@ -32,8 +32,7 @@
 
 .menu-container {
   background-color: #fff;
-  max-width: 480px;
-  max-height: 796px;
+
   padding: 48px 25px;
   font-size: 20px;
 
@@ -41,10 +40,20 @@
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
 
   &.is-open {
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vh;
+    height: 95vh;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    .info-list {
+      margin-left: 0;
+    }
+    top: 50px;
   }
 
   @media screen and (min-width: 768px) {
