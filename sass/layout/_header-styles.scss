@@ -204,6 +204,12 @@ a.phone {
     margin-left: auto;
     max-height: 14px;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .mail-to {
   font-weight: 500;
